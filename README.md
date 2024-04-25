@@ -16,3 +16,23 @@ Este repositório contém um projeto de exemplo que demonstra como integrar o Sp
 
 Neste projeto, você encontrará exemplos práticos de como configurar e usar o Spring Boot juntamente com o Test Containers para testar componentes que dependem de recursos externos, como bancos de dados, cache e filas de mensagens. Com isso, você poderá garantir a integridade e a confiabilidade de suas aplicações, mesmo em ambientes complexos e distribuídos.
 
+
+### Testando o projeto
+
+```shell
+mvn clean install
+```
+
+
+### Rodando o projeto
+
+  Você vai precisar iniciar o banco de dados antes de iniciar a aplicacao. Utilize o arquivo
+docker-compose.yaml disponível no repositório.
+
+```shell
+mvn spring-boot:run
+```
+
+### Acesse  
+
+http://localhost:8080/actuator/health
